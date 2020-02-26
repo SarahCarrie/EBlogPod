@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'EB_LibLocationManager_Example' do
+  pod 'EB_LibLocationManager', :path => '../'
+
+  target 'EB_LibLocationManager_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
